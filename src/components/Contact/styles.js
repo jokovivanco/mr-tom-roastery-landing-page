@@ -5,7 +5,10 @@ export default makeStyles((theme) => ({
     backgroundImage: 'url("https://images.unsplash.com/photo-1511759066510-46958c3fffa0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=876&q=80")',
     backgroundPosition: '100% center',
     backgroundRepeat: 'no-repeat',
-    backgroundOrigin: 'padding-box'
+    backgroundOrigin: 'padding-box',
+    [theme.breakpoints.down('xs')]: {
+      backgroundPosition: '0% center'
+    },
   },
   form: {
     '& > *': {
