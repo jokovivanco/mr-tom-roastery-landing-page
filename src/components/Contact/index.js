@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, TextField, Box, Typography, Grid } from '@material-ui/core'
+import { Container, TextField, Box, Typography, Grid, Button, Icon } from '@material-ui/core'
 
 import useStyles from './styles'
 
@@ -8,7 +8,6 @@ const Contact = () => {
 
   const onSubmit = (e) => {
     e.preventDefault()
-    alert('Sent!')
   }
 
   return (
@@ -36,6 +35,17 @@ const Contact = () => {
                   </Grid>
                   <Grid item xs={12} md={12}>
                     <TextField id="message" label="Message" multiline minRows={3} variant="outlined" fullWidth />
+                  </Grid>
+                  <Grid item xs={12} md={12}>
+                    <Button
+                      type="submit"
+                      variant="contained"
+                      color="primary"
+                      className={classes.button}
+                      endIcon={<Icon>send</Icon>}
+                    >
+                      Send
+                    </Button>
                   </Grid>
                 </Grid>
               </form>

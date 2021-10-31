@@ -23,5 +23,8 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       textAlign: 'center'
     }
+  },
+  button: {
+    margin: `${theme.spacing(1)} ${theme.spacing(1)} 0`,
   }
 }))
