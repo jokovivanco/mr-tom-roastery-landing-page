@@ -13,7 +13,7 @@ const CardService = ({ title, icon, text, textButton }) => {
         <Box my={3}>
           {icon}
         </Box>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography variant="body2" color="textSecondary" component="p" align="left">
           {text}
         </Typography>
       </CardContent>
