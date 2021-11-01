@@ -17,9 +17,5 @@
 }
 
 .my-background-pattern {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3cpath d='M647.09 654.42C758.54 654.4 856.64 626.81 1091.75 622.56 1326.86 618.31 1406.23 358.91 1536.41 348.16' stroke='rgba(25%2c 118%2c 210%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M811.14 634.27C881.44 631.21 850.8 524.55 1065.15 512.99 1279.5 501.43 1429.09 247.17 1573.18 238.59' stroke='rgba(25%2c 118%2c 210%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M397.62 652.14C544.1 615.29 588.24 224.73 816.66 216.91 1045.08 209.09 1026.19 286.91 1235.71 286.91 1445.23 286.91 1548.54 217.15 1654.75 216.91' stroke='rgba(25%2c 118%2c 210%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M640.04 575.54C775.18 526.55 723.69 123.73 994.46 122.78 1265.23 121.83 1515.72 365.7 1703.3 369.18' stroke='rgba(25%2c 118%2c 210%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M977.4 607.03C1080.37 550.73 1029.38 207 1218.9 204.48 1408.43 201.96 1573.15 380.82 1701.91 383.68' stroke='rgba(25%2c 118%2c 210%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: #f0f0f0;
+  position: relative;
 }

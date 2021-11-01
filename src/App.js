@@ -12,7 +12,10 @@ import SurveyOfTheDay from './components/SurveyOfTheDay'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
+import useStyles from './styles'
+
 const App = () => {
+  const classes = useStyles()
   const [coloredNavbar, setColoredNavbar] = useState(false)
 
   useEffect(() => {
@@ -46,12 +49,14 @@ const App = () => {
       <Navigation coloredNavbar={coloredNavbar} />
       <HeroImage />
       <Services />
-      <RoasterTraining />
       <div className='my-background-pattern'>
+        <div className={classes.pattern} />
+        <div className={classes.pattern2} />
+        <RoasterTraining />
         <SupplyRetail />
         <Franchise />
+        <SurveyOfTheDay />
       </div>
-      <SurveyOfTheDay />
       <Contact />
       <Footer />
     </ThemeProvider>

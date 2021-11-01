@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/core'
-import { deepOrange } from '@material-ui/core/colors'
 
 export default makeStyles(() => ({
   section: {
