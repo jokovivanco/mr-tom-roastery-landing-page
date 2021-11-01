@@ -8,8 +8,11 @@ export default makeStyles(() => ({
   card: {
     textAlign: 'center'
   },
+  grid: {
+    padding: '0 50px'
+  },
   paper: {
-    paddingTop: '20px'
+    padding: '10px 3px 0'
   },
   title: {
     color: deepOrange['A700']

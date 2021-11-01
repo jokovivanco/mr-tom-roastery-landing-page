@@ -2,13 +2,21 @@ import { makeStyles } from '@material-ui/core'
 
 export default makeStyles((theme) => ({
   root: {
-    minWidth: 200
+    minWidth: 200,
+    paddingTop: '5px'
   },
   media: {
-    height: 200
+    width: 'auto',
+    height: 300,
+    position: 'relative',
+  },
+  cardActions: {
+    display: 'flex',
+    justifyContent: 'center'
   },
   button: {
     color: 'white',
+    width: '88%',
     backgroundColor: 'black',
     '&:hover': {
       color: 'black',

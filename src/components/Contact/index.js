@@ -17,14 +17,17 @@ const Contact = () => {
           <Typography align="center" variant="h4">Contact Us</Typography>
         </Box>
         <Container maxWidth="md">
-          <Typography variant="body2" component="p" className={classes.direction}>
-            I would love to work together with you.
-          </Typography>
-          <Typography variant="body2" component="p" className={classes.direction}>
-            Let's do ours better with our good cooperation.
-          </Typography>
+          <div className={classes.subtitle}>
+            <Typography variant="body2" component="p" className={classes.direction}>
+              I would love to work together with you.
+            </Typography>
+            <Typography variant="body2" component="p" className={classes.direction}>
+              Let's do ours better with our good cooperation.
+            </Typography>
+          </div>
           <Grid container>
-            <Grid item xs={12} md={6}>
+            <Grid item md={3} />
+            <Grid item xs={12} md={9}>
               <form className={classes.form} noValidate autoComplete="off" onSubmit={onSubmit}>
                 <Grid container spacing={3} className={classes.grid}>
                   <Grid item xs={12} md={12}>

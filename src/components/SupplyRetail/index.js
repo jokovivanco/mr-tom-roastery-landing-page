@@ -3,6 +3,7 @@ import { Container, Box, Typography } from '@material-ui/core'
 
 import useStyles from './styles'
 import CardSupplyRetail from './Card'
+import { SR_1, SR_2, SR_3, SR_4 } from '../../images'
 
 
 const SupplyRetail = () => {
@@ -13,32 +14,26 @@ const SupplyRetail = () => {
       id: 1,
       title: 'Decade Coffee',
       text: 'Coffee that can henshin to be something else then has fullpower after it. Gain some muscles on their body and spreading smells of coffee. Well, they can service you in a cosplay theme and henshin your coffee into a theme that\'s relatives.',
-      image: 'https://images.unsplash.com/photo-1590411914259-ab083f58d04b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=464&q=80'
+      image: SR_1
     },
     {
       id: 2,
       title: 'Quirk Coffee',
       text: 'Coffee that can henshin to be something else then has fullpower after it. Gain some muscles on their body and spreading smells of coffee. Well, they can service you in a cosplay theme and henshin your coffee into a theme that\'s relatives.',
-      image: 'https://images.unsplash.com/photo-1605495984007-ccb84be932b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80'
+      image: SR_2
     },
     {
       id: 3,
       title: 'Cosplay Coffee',
       text: 'Coffee that can henshin to be something else then has fullpower after it. Gain some muscles on their body and spreading smells of coffee . Well, they can service you in a cosplay theme and henshin your coffee into a theme that\'s relatives.',
-      image: 'https://images.unsplash.com/photo-1568417847905-1ba5effadab1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80'
+      image: SR_3
     },
     {
       id: 4,
       title: 'Costume Coffee',
       text: 'Coffee that can henshin to be something else then has fullpower after it. Gain some muscles on their body and spreading smells of coffee. Well, they can service you in a cosplay theme and henshin your coffee into a theme that\'s relatives.',
-      image: 'https://images.unsplash.com/photo-1609687532637-967130b8f32f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80'
-    },
-    {
-      id: 5,
-      title: 'Star Wars Coffee',
-      text: 'Coffee that can henshin to be something else then has fullpower after it. Gain some muscles on their body and spreading smells of coffee. Well, they can service you in a cosplay theme and henshin your coffee into a theme that\'s relatives.',
-      image: 'https://images.unsplash.com/photo-1478479474071-8a3014d422c8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80'
-    },
+      image: SR_4
+    }
   ]
 
   return (

@@ -1,14 +1,21 @@
 import { makeStyles } from '@material-ui/core'
 
+import { pattern2 } from '../../images'
+
 export default makeStyles((theme) => ({
   section: {
-    backgroundImage: 'url("https://images.unsplash.com/photo-1511759066510-46958c3fffa0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=876&q=80")',
-    backgroundPosition: '100% center',
+    backgroundImage: `url(${pattern2})`,
+    backgroundPosition: '-10% center',
+    backgroundSize: '50%',
     backgroundRepeat: 'no-repeat',
     backgroundOrigin: 'padding-box',
     [theme.breakpoints.down('xs')]: {
-      backgroundPosition: '0% center'
+      backgroundSize: '100%',
+      backgroundPosition: '-50% 80%'
     },
+  },
+  subtitle: {
+    textAlign: 'center'
   },
   form: {
     '& > *': {

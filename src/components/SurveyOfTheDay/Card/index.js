@@ -9,19 +9,18 @@ const CardSurveyOfTheDay = ({ image, title }) => {
   return (
     <Card className={classes.root}>
       <CardMedia
-        alt="image from unsplash.com"
+        alt="from unsplash.com"
         className={classes.media}
         image={image}
         title={title}
-        style={{ position: 'relative' }}
       >
-        <div className={classes.overlay} />
+        {/* <div className={classes.overlay} /> */}
         <Typography className={classes.title} variant="subtitle1" align="center">
           {title}
         </Typography>
       </CardMedia>
-      <CardActions>
-        <Button fullWidth size="medium" variant="contained" className={classes.button}>Vote</Button>
+      <CardActions className={classes.cardActions}>
+        <Button size="medium" variant="contained" className={classes.button}>Vote</Button>
       </CardActions>
     </Card>
   )

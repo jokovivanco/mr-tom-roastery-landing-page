@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Grid, Box, Typography, Paper } from '@material-ui/core'
 
 import useStyles from './styles'
+import { FC_1, FC_2 } from '../../images'
 
 const Franchise = () => {
   const classes = useStyles()
@@ -17,7 +18,7 @@ const Franchise = () => {
             <Grid container justifyContent="space-between" spacing={3}>
               <Grid item xs={12} md={3}>
                 <Paper elevation={1} className={classes.paper} square>
-                  <img className={classes.image} alt="from unsplash.com" src={`https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=847&q=80`} variant="outlined" />
+                  <img className={classes.image} alt="from unsplash.com" src={FC_1} variant="outlined" />
                 </Paper>
               </Grid>
               <Grid item xs={12} md={9}>
@@ -38,7 +39,7 @@ const Franchise = () => {
               </Grid>
               <Grid item xs={12} md={3}>
                 <Paper elevation={1} className={classes.paper}>
-                  <img className={classes.image} alt="from unsplash.com" src={`https://images.unsplash.com/photo-1559925393-8be0ec4767c8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=871&q=80`} variant="outlined" />
+                  <img className={classes.image} alt="from unsplash.com" src={FC_2} variant="outlined" />
                 </Paper>
               </Grid>
             </Grid>

@@ -1,11 +1,11 @@
 import { makeStyles } from '@material-ui/core'
 
-const backgroundImage = "https://images.unsplash.com/photo-1524350876685-274059332603?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2071&q=80"
+import { heroImage } from '../../images'
 
 export default makeStyles((theme) => ({
   section: {
     height: '90vh',
-    backgroundImage: `url(${backgroundImage})`,
+    backgroundImage: `url(${heroImage})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',

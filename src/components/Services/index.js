@@ -1,9 +1,9 @@
 import React from 'react'
 import { Container, Grid, Box, Typography } from '@material-ui/core'
-import { AssignmentOutlined, InboxOutlined, BusinessOutlined } from '@material-ui/icons'
 
 import useStyles from './styles'
 import CardService from './CardService'
+import { box, saveOk, store } from '../../images'
 
 const Services = () => {
   const classes = useStyles()
@@ -12,21 +12,21 @@ const Services = () => {
     {
       id: 1,
       title: 'Roaster Training',
-      icon: <AssignmentOutlined fontSize="large" />,
+      icon: <img alt="service1" src={saveOk} />,
       text: `It can also be a fun way to surprise others.`,
       textButton: 'Go'
     },
     {
       id: 2,
       title: 'Supply & Retail',
-      icon: <InboxOutlined fontSize="large" />,
+      icon: <img alt="service2" src={box} />,
       text: `Sure. We are always looking to expand the database of random sentences.`,
       textButton: 'Go'
     },
     {
       id: 3,
       title: 'Franchise',
-      icon: <BusinessOutlined fontSize="large" />,
+      icon: <img alt="service3" src={store} />,
       text: `No, the random sentences in our generator are not computer generated. `,
       textButton: 'Go'
     },

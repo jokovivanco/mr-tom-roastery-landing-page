@@ -3,16 +3,12 @@ import { Container, Grid, Box, Typography } from '@material-ui/core'
 import Masonry from 'react-masonry-css'
 
 import useStyles from './styles'
+import { RT_1, RT_2, RT_3, RT_4 } from '../../images'
 
 const RoasterTraining = () => {
   const classes = useStyles()
 
-  const sources = [
-    'https://images.unsplash.com/photo-1551610290-e153ec567dd8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=363&q=80',
-    'https://images.unsplash.com/photo-1523942839745-7848c839b661?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80',
-    'https://images.unsplash.com/photo-1459755486867-b55449bb39ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80',
-    'https://images.unsplash.com/photo-1518057111178-44a106bad636?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=388&q=80'
-  ]
+  const sources = [RT_1, RT_2, RT_3, RT_4]
 
   return (
     <Box pt={2} pb={8} className={classes.section}>
