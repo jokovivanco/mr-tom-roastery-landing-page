@@ -39,7 +39,7 @@ const SurveyOfTheDay = () => {
             </Typography>
           </Box>
           <Box my={6}>
-            <Typography className={classes.title} gutterBottom align="center" variant="h2">
+            <Typography color="primary" gutterBottom align="center" variant="h2">
               8,112 people has voted
             </Typography>
           </Box>

@@ -3,7 +3,7 @@ import { deepOrange } from '@material-ui/core/colors'
 
 export default makeStyles(() => ({
   section: {
-    backgroundColor: 'transparent'
+    backgroundColor: 'white'
   },
   card: {
     textAlign: 'center'
@@ -13,8 +13,5 @@ export default makeStyles(() => ({
   },
   paper: {
     padding: '10px 3px 0'
-  },
-  title: {
-    color: deepOrange['A700']
   }
 }))

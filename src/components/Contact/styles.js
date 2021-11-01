@@ -9,6 +9,7 @@ export default makeStyles((theme) => ({
     backgroundSize: '50%',
     backgroundRepeat: 'no-repeat',
     backgroundOrigin: 'padding-box',
+    backgroundColor: 'white',
     [theme.breakpoints.down('xs')]: {
       backgroundSize: '100%',
       backgroundPosition: '-50% 80%'

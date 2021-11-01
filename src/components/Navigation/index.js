@@ -11,7 +11,7 @@ const Navigation = ({ coloredNavbar }) => {
       <Container maxWidth="md">
         <Toolbar className={classes.customToolbar}>
           <Typography className={`${classes.title} ${coloredNavbar && classes.fontInverted}`} variant="caption">Mr Tom Roastery</Typography>
-          <Button color="secondary" variant="contained">Get Coffee</Button>
+          <Button color="primary" variant="contained">Get Coffee</Button>
         </Toolbar>
       </Container>
     </AppBar>

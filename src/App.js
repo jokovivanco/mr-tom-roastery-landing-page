@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { CssBaseline } from '@material-ui/core'
+import { createTheme, ThemeProvider } from '@material-ui/core/styles'
 
 import Navigation from './components/Navigation'
 import HeroImage from './components/HeroImage'
@@ -25,22 +26,35 @@ const App = () => {
     })
   }, [])
 
+  const theme = createTheme({
+    palette: {
+      primary: {
+        light: '#E0C097',
+        main: '#B85C38',
+        dark: '#5C3D2E'
+      },
+      background: {
+        default: '#2D2424'
+      }
+    }
+  })
+
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
       <Navigation coloredNavbar={coloredNavbar} />
       <HeroImage />
       <Services />
       <RoasterTraining />
-      <SupplyRetail />
       <div className='my-background-pattern'>
+        <SupplyRetail />
         <Franchise />
-        <SurveyOfTheDay />
       </div>
+      <SurveyOfTheDay />
       <Contact />
       <Footer />
-    </>
+    </ThemeProvider>
   )
 }
 

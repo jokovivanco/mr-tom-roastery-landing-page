@@ -17,10 +17,10 @@ export default makeStyles((theme) => ({
   button: {
     color: 'white',
     width: '88%',
-    backgroundColor: 'black',
+    backgroundColor: theme.palette.primary.main,
     '&:hover': {
-      color: 'black',
-      backgroundColor: 'white'
+      color: 'white',
+      backgroundColor: theme.palette.primary.light
     }
   },
   title: {

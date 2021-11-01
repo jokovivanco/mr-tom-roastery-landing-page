@@ -16,7 +16,7 @@ const HeroImage = () => {
             <Typography variant="h2">We Provide Better Coffee Quality</Typography>
             <Typography variant="h5">We're not just serving coffees, we also educate you about coffee itself! Feel free to ask us about coffees and all about its qualities and prices</Typography>
             <Box my={3}>
-              <Button variant="contained" color="secondary">Get coffee</Button>
+              <Button variant="contained" color="primary">Get coffee</Button>
             </Box>
           </Grid>
         </Grid>
