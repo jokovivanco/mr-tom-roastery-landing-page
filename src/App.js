@@ -48,10 +48,14 @@ const App = () => {
       <CssBaseline />
       <Navigation coloredNavbar={coloredNavbar} />
       <HeroImage />
-      <Services />
       <div className='my-background-pattern'>
-        <div className={classes.pattern} />
+        <div className={classes.pattern1} />
         <div className={classes.pattern2} />
+        <Services />
+      </div>
+      <div className='my-background-pattern'>
+        <div className={classes.pattern3} />
+        <div className={classes.pattern4} />
         <RoasterTraining />
         <SupplyRetail />
         <Franchise />

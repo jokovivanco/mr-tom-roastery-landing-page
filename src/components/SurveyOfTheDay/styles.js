@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core'
 
 export default makeStyles(() => ({
   section: {
-    backgroundColor: 'white'
+    backgroundColor: '#f0f0f0'
   },
   card: {
     textAlign: 'center'
@@ -11,6 +11,6 @@ export default makeStyles(() => ({
     padding: '0 50px'
   },
   paper: {
-    padding: '10px 3px 0'
+    padding: '20px 3px'
   }
 }))
