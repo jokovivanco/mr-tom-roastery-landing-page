@@ -25,7 +25,9 @@ const RoasterTraining = () => {
                 columnClassName="my-masonry-grid_column"
               >
                 {sources.map((source, i) => (
-                  <img width="100%" className={classes.images} height={i === 0 || i === 3 ? '50%' : '30 %'} src={source} alt="source from unsplash" key={i} />
+                  <div key={i} className={i === 0 || i === 3 ? classes.imageContainerLong : classes.imageContainerShort}>
+                    <img className={i === 0 || i === 3 ? classes.imageLong : classes.imageShort} src={source} alt="source from unsplash" />
+                  </div>
                 ))}
               </Masonry>
             </Grid>
