@@ -17,7 +17,7 @@ const Franchise = () => {
           <Box mb={2}>
             <Grid container justifyContent="space-between" spacing={3}>
               <Grid item xs={12} md={3}>
-                <Paper elevation={1} className={classes.paper} square>
+                <Paper elevation={0} className={classes.paper} square>
                   <img className={classes.image} alt="from unsplash.com" src={FC_1} variant="outlined" />
                 </Paper>
               </Grid>
@@ -38,7 +38,7 @@ const Franchise = () => {
                 </Typography>
               </Grid>
               <Grid item xs={12} md={3}>
-                <Paper elevation={1} className={classes.paper}>
+                <Paper elevation={0} className={classes.paper}>
                   <img className={classes.image} alt="from unsplash.com" src={FC_2} variant="outlined" />
                 </Paper>
               </Grid>

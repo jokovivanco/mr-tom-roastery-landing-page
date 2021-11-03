@@ -8,7 +8,7 @@ export default makeStyles(() => ({
     textAlign: 'center'
   },
   grid: {
-    padding: '0 50px'
+    padding: '0 15px'
   },
   paper: {
     padding: '20px 3px'

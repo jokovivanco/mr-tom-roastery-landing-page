@@ -28,6 +28,12 @@ export default makeStyles((theme) => ({
     right: 0,
     bottom: 0,
     left: 0,
-    backgroundColor: 'rgba(0,0,0,0.7)'
+    backgroundColor: 'rgba(0,0,0,0.3)'
+  },
+  logo: {
+    height: '50px',
+  },
+  grid: {
+    marginTop: '70px'
   }
 }))

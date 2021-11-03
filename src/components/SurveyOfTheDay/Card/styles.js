@@ -1,44 +1,28 @@
 import { makeStyles } from '@material-ui/core'
 
 export default makeStyles((theme) => ({
-  root: {
-    minWidth: 200,
-    paddingTop: '5px'
+  paper: {
+    padding: '15px'
   },
-  media: {
-    width: 'auto',
-    height: 300,
-    position: 'relative',
-  },
-  cardActions: {
+  card: {
+    width: '100%',
     display: 'flex',
-    justifyContent: 'center'
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'relative'
+  },
+  image: {
+    width: '100%',
+    borderRadius: '3px',
+  },
+  caption: {
+    position: 'absolute',
+    bottom: 55,
+    color: 'white'
   },
   button: {
-    color: 'white',
-    width: '88%',
-    backgroundColor: theme.palette.primary.main,
-    '&:hover': {
-      color: 'white',
-      backgroundColor: theme.palette.primary.light
-    }
-  },
-  title: {
-    color: 'white',
     position: 'absolute',
-    bottom: 20,
-    left: 0,
-    right: 0
-  },
-  overlay: {
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    top: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.3)',
-    '&:hover': {
-      backgroundColor: 'transparent'
-    }
+    bottom: 15,
+    width: 'calc(100% - 30px)'
   }
 }))

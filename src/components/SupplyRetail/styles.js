@@ -1,11 +1,11 @@
 import { makeStyles } from '@material-ui/core'
 
-export default makeStyles((theme) => ({
+export default makeStyles(() => ({
   section: {
     backgroundColor: '#f0f0f0'
   },
   horizontal: {
-    whiteSpace: 'nowrap',
-    overflowX: 'scroll'
+    display: 'flex',
+    justifyContent: 'center'
   }
 }))

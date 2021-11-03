@@ -18,15 +18,19 @@ const App = () => {
   const classes = useStyles()
   const [coloredNavbar, setColoredNavbar] = useState(false)
 
-  useEffect(() => {
-    window.addEventListener('scroll', (e) => {
-      const scrollTop = e.target.documentElement.scrollTop
+  const handleNavbar = () => {
+    if (window.scrollY > 0) {
+      setColoredNavbar(true)
+    } else {
+      setColoredNavbar(false)
+    }
+  }
 
-      setColoredNavbar(scrollTop)
-    })
-    window.removeEventListener('scroll', (e) => {
-      console.log('removed')
-    })
+  useEffect(() => {
+    window.addEventListener('scroll', handleNavbar)
+    return () => {
+      window.removeEventListener('scroll', handleNavbar)
+    }
   }, [])
 
   const theme = createTheme({

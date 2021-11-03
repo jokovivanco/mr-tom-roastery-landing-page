@@ -1,13 +1,34 @@
 import React from 'react'
-import { Container, Box, Typography } from '@material-ui/core'
+import { Container, Box, Typography, useTheme } from '@material-ui/core'
+import Carousel from 'react-multi-carousel'
+import 'react-multi-carousel/lib/styles.css'
 
 import useStyles from './styles'
 import CardSupplyRetail from './Card'
 import { SR_1, SR_2, SR_3, SR_4 } from '../../images'
 
 
-const SupplyRetail = () => {
+const SupplyRetail = (props) => {
   const classes = useStyles()
+  const theme = useTheme()
+
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 3 // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 2 // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1 // optional, default to 1.
+    }
+  }
 
   const contents = [
     {
@@ -43,9 +64,11 @@ const SupplyRetail = () => {
           <Typography align="center" variant="h4">Supply & Retail</Typography>
         </Box>
         <Box pb={3} className={classes.horizontal}>
-          {contents.map(content => (
-            <CardSupplyRetail key={content.id} title={content.title} text={content.text} image={content.image} />
-          ))}
+          <Carousel responsive={responsive}>
+            {contents.map(content => (
+              <CardSupplyRetail key={content.id} title={content.title} text={content.text} image={content.image} />
+            ))}
+          </Carousel>
         </Box>
       </Container>
     </Box >

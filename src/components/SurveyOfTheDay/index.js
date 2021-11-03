@@ -43,7 +43,7 @@ const SurveyOfTheDay = () => {
               8,112 people has voted
             </Typography>
           </Box>
-          <Grid container spacing={2} className={classes.grid}>
+          <Grid container spacing={2} alignItems="center" className={classes.grid}>
             {images.map((image) => (
               <Grid item xs={12} md={4}>
                 <CardSurveyOfTheDay key={image.id} image={image.image} title={image.title} />

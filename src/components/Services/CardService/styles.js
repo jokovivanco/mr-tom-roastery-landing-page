@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core'
 export default makeStyles(() => ({
   card: {
     textAlign: 'center',
-    min: 300
+    padding: '15px'
   },
   content: {
     marginTop: '-20px'

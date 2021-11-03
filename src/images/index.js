@@ -1,4 +1,4 @@
-export { default as logo } from './logo-transparent.svg'
+export { default as logo } from './logo-transparent.png'
 export { default as FR_1 } from './FR_1.png'
 export { default as FR_2 } from './FR_2.png'
 export { default as RT_1 } from './RT_1.png'

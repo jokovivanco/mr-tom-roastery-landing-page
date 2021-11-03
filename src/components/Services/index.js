@@ -13,7 +13,7 @@ const Services = () => {
       id: 1,
       title: 'Roaster Training',
       icon: <img alt="service1" src={saveOk} />,
-      text: `It can also be a fun way to surprise others.`,
+      text: `It can also be a fun way to surprise others. The database of random sentences.`,
       textButton: 'Go'
     },
     {

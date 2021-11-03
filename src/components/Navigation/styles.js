@@ -16,5 +16,9 @@ export default makeStyles(() => ({
   fontInverted: {
     fontWeight: '400',
     color: 'black'
+  },
+  transition: {
+    transitionTimingFunction: 'ease-in',
+    transition: '0.5s'
   }
 }))
