@@ -1,11 +1,8 @@
 import { makeStyles } from '@material-ui/core'
 
-import { heroImage } from '../../images'
-
 export default makeStyles((theme) => ({
   section: {
     height: '90vh',
-    backgroundImage: `url(${heroImage})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
@@ -32,8 +29,5 @@ export default makeStyles((theme) => ({
   },
   logo: {
     height: '50px',
-  },
-  grid: {
-    marginTop: '70px'
   }
 }))

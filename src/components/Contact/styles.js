@@ -37,5 +37,6 @@ export default makeStyles((theme) => ({
   },
   button: {
     margin: `${theme.spacing(1)} ${theme.spacing(1)} 0`,
-  }
+  },
+  toolbar: theme.mixins.toolbar
 }))

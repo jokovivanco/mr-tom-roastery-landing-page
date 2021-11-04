@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, TextField, Box, Typography, Grid, Button, Icon } from '@material-ui/core'
+import { HashLink } from 'react-router-hash-link'
 
 import useStyles from './styles'
 
@@ -11,7 +12,8 @@ const Contact = () => {
   }
 
   return (
-    <Box pt={2} pb={8} className={classes.section}>
+    <Box pb={8} className={classes.section} id="contact">
+      <div className={classes.toolbar} />
       <div style={{ height: '600px' }}>
         <Box my={4}>
           <Typography align="center" variant="h4">Contact Us</Typography>

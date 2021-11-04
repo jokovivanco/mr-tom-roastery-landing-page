@@ -24,5 +24,6 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column-reverse'
     }
-  }
+  },
+  toolbar: theme.mixins.toolbar
 }))

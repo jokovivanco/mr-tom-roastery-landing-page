@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core'
 
-export default makeStyles(() => ({
+export default makeStyles((theme) => ({
   section: {
     backgroundColor: '#f0f0f0'
   },
@@ -12,5 +12,6 @@ export default makeStyles(() => ({
   },
   paper: {
     padding: '20px 3px'
-  }
+  },
+  toolbar: theme.mixins.toolbar
 }))

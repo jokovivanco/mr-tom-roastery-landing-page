@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import { CssBaseline } from '@material-ui/core'
+import { CssBaseline, Typography } from '@material-ui/core'
 import { createTheme, ThemeProvider } from '@material-ui/core/styles'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import Navigation from './components/Navigation'
 import HeroImage from './components/HeroImage'
@@ -11,6 +12,7 @@ import Franchise from './components/Franchise'
 import SurveyOfTheDay from './components/SurveyOfTheDay'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import About from './components/About'
 
 import useStyles from './styles'
 
@@ -49,24 +51,35 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Navigation coloredNavbar={coloredNavbar} />
-      <HeroImage />
-      <div className='my-background-pattern'>
-        <div className={classes.pattern1} />
-        <div className={classes.pattern2} />
-        <Services />
-      </div>
-      <div className='my-background-pattern'>
-        <div className={classes.pattern3} />
-        <div className={classes.pattern4} />
-        <RoasterTraining />
-        <SupplyRetail />
-        <Franchise />
-        <SurveyOfTheDay />
-      </div>
-      <Contact />
-      <Footer />
+      <Router>
+        <CssBaseline />
+        <Navigation coloredNavbar={coloredNavbar} />
+        <Switch>
+          <Route exact path="/">
+            <HeroImage />
+            <div className='my-background-pattern'>
+              <div className={classes.pattern1} />
+              <div className={classes.pattern2} />
+              <Services />
+            </div>
+            <div className='my-background-pattern'>
+              <div className={classes.pattern3} />
+              <div className={classes.pattern4} />
+              <RoasterTraining />
+              <SupplyRetail />
+              <Franchise />
+              <SurveyOfTheDay />
+            </div>
+            <Contact />
+          </Route>
+          <Route exact path="/about">
+            <About />
+            <Contact />
+          </Route>
+          <Route exact path="*" component={() => <Typography>Not Found 404</Typography>} />
+        </Switch>
+        <Footer />
+      </Router>
     </ThemeProvider>
   )
 }

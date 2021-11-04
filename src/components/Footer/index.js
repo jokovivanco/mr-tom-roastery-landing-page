@@ -7,7 +7,8 @@ const Footer = () => {
   const classes = useStyles()
 
   return (
-    <Box pt={2} pb={8} className={classes.section}>
+    <Box pb={8} className={classes.section}>
+      <div className={classes.toolbar} />
       <Container maxWidth="md">
         <div>
           <Box my={4}>
