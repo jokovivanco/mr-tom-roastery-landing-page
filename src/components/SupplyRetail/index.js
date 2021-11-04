@@ -1,34 +1,34 @@
 import React from 'react'
 import { Container, Box, Typography, useTheme } from '@material-ui/core'
-import Carousel from 'react-multi-carousel'
-import 'react-multi-carousel/lib/styles.css'
+import Carousel from 'react-grid-carousel'
 
 import useStyles from './styles'
 import CardSupplyRetail from './Card'
 import { SR_1, SR_2, SR_3, SR_4 } from '../../images'
 
+const MyDot = ({ isActive }) => {
+  const theme = useTheme()
+
+  return (
+    <span
+      style={{
+        display: 'inline-block',
+        borderRadius: '50%',
+        height: isActive ? '8px' : '5px',
+        width: isActive ? '8px' : '5px',
+        background: theme.palette.primary.main,
+        marginTop: '20px'
+      }}
+    ></span>
+  )
+}
+
 
 const SupplyRetail = (props) => {
   const classes = useStyles()
   const theme = useTheme()
-
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide: 3 // optional, default to 1.
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2 // optional, default to 1.
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1 // optional, default to 1.
-    }
-  }
+  // const matches = [useMediaQuery(theme.breakpoints.down('xs')), useMediaQuery(theme.breakpoints.down('sm'))]
+  // const matchXsAndSm = matches[0] || matches[1]
 
   const contents = [
     {
@@ -63,10 +63,12 @@ const SupplyRetail = (props) => {
         <Box my={4}>
           <Typography align="center" variant="h4">Supply & Retail</Typography>
         </Box>
-        <Box pb={3} className={classes.horizontal}>
-          <Carousel responsive={responsive}>
+        <Box pb={3}>
+          <Carousel cols={3} rows={1} loop autoplay={3000} dot={MyDot} showDots={true}>
             {contents.map(content => (
-              <CardSupplyRetail key={content.id} title={content.title} text={content.text} image={content.image} />
+              <Carousel.Item key={content.id}>
+                <CardSupplyRetail title={content.title} text={content.text} image={content.image} />
+              </Carousel.Item>
             ))}
           </Carousel>
         </Box>

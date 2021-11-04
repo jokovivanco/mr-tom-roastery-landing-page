@@ -44,8 +44,8 @@ const SurveyOfTheDay = () => {
             </Typography>
           </Box>
           <Grid container spacing={2} alignItems="center" className={classes.grid}>
-            {images.map((image) => (
-              <Grid item xs={12} md={4}>
+            {images.map((image, i) => (
+              <Grid item xs={12} md={4} key={i}>
                 <CardSurveyOfTheDay key={image.id} image={image.image} title={image.title} />
               </Grid>
             ))}
