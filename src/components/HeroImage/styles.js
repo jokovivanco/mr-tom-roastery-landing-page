@@ -11,7 +11,10 @@ export default makeStyles((theme) => ({
     position: 'relative',
   },
   container: {
-    height: '100%'
+    height: '100%',
+    [theme.breakpoints.down('sm')]: {
+      marginTop: '-100px'
+    }
   },
   content: {
     height: '100%',
@@ -29,5 +32,14 @@ export default makeStyles((theme) => ({
   },
   logo: {
     height: '50px',
+    [theme.breakpoints.up('sm')]: {
+      marginTop: '70px'
+    }
+  },
+  goldenLogo: {
+    width: '100%',
+    [theme.breakpoints.down('xs')]: {
+      width: '50%'
+    }
   }
 }))

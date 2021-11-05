@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Grid, Box, Typography, Button } from '@material-ui/core'
+import { Container, Grid, Box, Typography, Button, Hidden } from '@material-ui/core'
 import { HashLink } from 'react-router-hash-link'
 
 import useStyles from './styles'
@@ -15,13 +15,15 @@ const HeroImage = ({ image, containerStyle, rightLogo, text, subText }) => {
       backgroundImage: `url(${image ? image : heroImage})`,
       ...containerStyle
     }} id="home">
-      {/* <div className={classes.toolbar} /> */}
+      <Hidden smUp>
+        <div className={classes.toolbar} />
+      </Hidden>
       <Container className={classes.container} maxWidth="md">
         <div className={classes.overlay} />
         <Grid className={classes.content} spacing={2} container alignItems="center" justifyContent="space-between">
           <Grid item xs={12} md={8} className={classes.grid}>
             {location.pathname === '/' && (
-              <img src={logo} alt="mrtomroastery logo" style={{ marginTop: '70px' }} className={classes.logo} />
+              <img src={logo} alt="mrtomroastery logo" className={classes.logo} />
             )}
             <Typography variant="h2">{text || 'We Provide Better Coffee Quality'}</Typography>
             <Typography variant="h6">
@@ -40,8 +42,8 @@ const HeroImage = ({ image, containerStyle, rightLogo, text, subText }) => {
             </Box>
           </Grid>
           {rightLogo && (
-            <Grid justifyContent="center" alignItems="center" item xs={12} md={4}>
-              <img src={rightLogo} alt="own logo" width="100%" />
+            <Grid justifyContent="center" alignItems="center" style={{ textAlign: 'center' }} item xs={12} md={4}>
+              <img src={rightLogo} alt="own logo" className={classes.goldenLogo} />
             </Grid>
           )}
         </Grid>
